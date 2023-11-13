@@ -46,6 +46,7 @@ const Location = ({
       <div className="text-xl">{number}</div>
 
       <iframe
+        title="google map"
         src={url}
         className="w-full h-[400px] md:w-[600px] md:h-[450px]"
         style={{
