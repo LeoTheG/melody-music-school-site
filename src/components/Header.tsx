@@ -1,5 +1,8 @@
 import { Link } from "react-router-dom";
 import logo from "../assets/melody-logo.png";
+import { Bars3Icon } from "@heroicons/react/24/outline";
+import SlideOver from "./SlideOver";
+import { useState } from "react";
 
 const links = [
   {
@@ -50,24 +53,63 @@ const hoverableLinks: { [key: string]: { label: string; href: string }[] } = {
 };
 
 export const Header = ({ showBackground = false, smallLogo = false }) => {
+  const [isSlideOverOpen, setIsSlideOverOpen] = useState(false);
   return (
     <div
-      className="flex flex-row px-16 py-8 justify-between z-10 relative"
+      className="flex flex-row px-8 md:px-16 py-8 justify-between z-10 relative"
       style={{
         backgroundColor: showBackground ? "#212121" : "undefined",
       }}
     >
+      <SlideOver
+        isOpen={isSlideOverOpen}
+        onClose={() => setIsSlideOverOpen(false)}
+      >
+        {links.map((link) => {
+          const links = hoverableLinks[link.label];
+          // if (links) {
+          //   return <Hoverable text={link.label} links={links} />;
+          // }
+          if (links) {
+            // return multiple links instead of hover in mobile
+            return (
+              <div className="flex flex-col">
+                {links.map((link) => (
+                  <Link to={link.href}>
+                    <div className="text-xl h-fit w-fit cursor-pointer">
+                      {link.label}
+                    </div>
+                  </Link>
+                ))}
+              </div>
+            );
+          }
+          return (
+            <Link to={link.href}>
+              <div className="text-xl h-fit w-fit cursor-pointer">
+                {link.label}
+              </div>
+            </Link>
+          );
+        })}
+      </SlideOver>
       <Link to="/">
         <img
           src={logo}
           alt="Melody Logo"
-          className="w-40 h-auto"
+          className="w-32 md:w-40 h-auto"
           style={{
             width: smallLogo ? 100 : "undefined",
           }}
         />
       </Link>
-      <div className="flex gap-4">
+      <div className="flex md:hidden flex-1 justify-end">
+        <Bars3Icon
+          className="w-16 text-white cursor-pointer"
+          onClick={() => setIsSlideOverOpen(true)}
+        />
+      </div>
+      <div className="hidden md:flex gap-4">
         {links.map((link) => {
           const links = hoverableLinks[link.label];
           if (links) {

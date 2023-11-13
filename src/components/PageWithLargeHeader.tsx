@@ -12,10 +12,11 @@ export const PageWithLargeHeader: React.FC<
           alt="background"
           className="w-full absolute top-0 left-0 object-cover h-[600px]"
         />
+        <div className="w-full absolute top-0 left-0 h-[600px] bg-black opacity-20" />
         <Header />
 
-        <div className="px-16 text-center flex flex-col gap-8">
-          <h1 className="text-8xl font-bold drop-shadow-lg text-white">
+        <div className="px-8 md:px-16 text-center flex flex-col gap-8">
+          <h1 className="text-2xl md:text-8xl font-bold drop-shadow-lg text-white">
             {title}
           </h1>
           <h2 className="text-2xl drop-shadow-lg text-white italic">

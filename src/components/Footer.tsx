@@ -1,7 +1,7 @@
 export const Footer = ({ showBackground = true }) => {
   return (
     <div
-      className="flex flex-col px-32 py-8 text-white gap-8"
+      className="flex flex-col px-8 md:px-32 py-8 text-white gap-8"
       style={{
         backgroundColor: showBackground ? "#212121" : "undefined",
       }}
@@ -17,9 +17,17 @@ export const Footer = ({ showBackground = true }) => {
           );
         })}
       </div>
-      <div>Glendale - 334 N. Central Ave. Glendale CA 91203</div>
-      <div>Granada Hills - 17727 Chatsworth St, Granada Hills, CA 91344</div>
-      <div>{"Call us at (818) 599-1606"}</div>
+      <div>
+        {"Glendale - 334 N. Central Ave. Glendale CA 91203. (818) 244-8244"}
+      </div>
+      <div>
+        {
+          "Granada Hills - 17727 Chatsworth St, Granada Hills, CA 91344. (818) 363-4343"
+        }
+      </div>
+      {/* <div>
+        © Copyright 2023 Melody Intl. Music School. All Rights Reserved.
+      </div> */}
     </div>
   );
 };
