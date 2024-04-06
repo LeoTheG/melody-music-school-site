@@ -60,10 +60,10 @@ export const Carousel = ({ imageUrls }: { imageUrls: string[] }) => {
       </div>
       <div className="flex justify-between w-full max-w-[300px]">
         <div className="btn btn-circle bg-none" onClick={handleClickLeft}>
-          <ArrowLeftIcon />
+          <ArrowLeftIcon className="h-5 w-5" />
         </div>
         <div className="btn btn-circle" onClick={handleClickRight}>
-          <ArrowRightIcon />
+          <ArrowRightIcon className="h-5 w-5" />
         </div>
       </div>
     </div>
