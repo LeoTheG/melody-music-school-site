@@ -21,6 +21,9 @@ export const AboutUs = () => {
             }
           </div>
         </div>
+        {/* <div className="px-8 md:px-0 md:w-[520px] h-full flex flex-col justify-center items-center gap-4 mt-8">
+          <div className="text-2xl font-poppins">Our Instructors</div>
+        </div> */}
       </div>
     </div>
   );

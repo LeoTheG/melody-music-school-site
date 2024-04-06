@@ -41,8 +41,8 @@ const BelowBanner = () => {
           For decades, Melody Intl. Music School has been the cornerstone of
           quality music education in our community. We are committed to
           imparting the gift of music, having nurtured the talents of thousands.
-          Our curriculum, enriched with music theory and scales, is designed to
-          foster the artist within.
+          Our curriculum, enriched with academic music theory and techniques, is
+          designed to foster the artist within.
         </p>
 
         <h2 className="text-xl font-bold">Yearly Recitals</h2>

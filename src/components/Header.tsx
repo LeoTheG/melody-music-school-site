@@ -25,6 +25,14 @@ const links = [
     label: "Schedule a lesson",
     href: "/schedule-a-lesson",
   },
+  {
+    label: "Recitals",
+    href: "/recitals",
+  },
+  {
+    label: "Certificates",
+    href: "/certificates",
+  },
 ];
 
 const hoverableLinks: { [key: string]: { label: string; href: string }[] } = {
@@ -48,6 +56,14 @@ const hoverableLinks: { [key: string]: { label: string; href: string }[] } = {
     {
       label: "Drums And Percussion",
       href: "/music-lessons/drums-and-percussion",
+    },
+    {
+      label: "Online Lessons",
+      href: "/music-lessons/online-lessons",
+    },
+    {
+      label: "Group Lessons",
+      href: "/music-lessons/group-lessons",
     },
   ],
 };
@@ -116,7 +132,7 @@ export const Header = ({ showBackground = false, smallLogo = false }) => {
             return <Hoverable text={link.label} links={links} />;
           }
           return (
-            <Link to={link.href}>
+            <Link to={link.href} className="h-fit">
               <div
                 className="text-white text-xl h-fit w-fit cursor-pointer"
                 style={{
@@ -141,7 +157,7 @@ const Hoverable = ({
   links: (typeof hoverableLinks)[string];
 }) => {
   return (
-    <div className="dropdown dropdown-hover">
+    <div className="dropdown dropdown-hover h-fit">
       <label
         tabIndex={0}
         className="m-1 text-white text-xl cursor-pointer"
@@ -156,8 +172,8 @@ const Hoverable = ({
         className="dropdown-content z-1 menu p-4 shadow bg-base-100 w-52 flex flex-col gap-2"
       >
         {links.map((link) => (
-          <Link to={link.href}>
-            <div className="text-lg">{link.label}</div>
+          <Link to={link.href} className="h-fit">
+            <div className="text-lg h-fit">{link.label}</div>
           </Link>
         ))}
       </ul>

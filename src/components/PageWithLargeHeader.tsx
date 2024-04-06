@@ -6,7 +6,7 @@ export const PageWithLargeHeader: React.FC<
 > = ({ children, img, title, subtitle }) => {
   return (
     <div className="w-full h-full">
-      <div className="h-fit relative pb-16">
+      <div className="h-fit relative pb-16 overflow-hidden">
         <img
           src={img}
           alt="background"

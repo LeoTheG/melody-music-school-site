@@ -5,6 +5,10 @@ import { MusicLessonsPages } from "./components/MusicLessonsPage";
 import { Home } from "./routes/Home";
 import { Locations } from "./routes/Locations";
 import { ScheduleALesson } from "./routes/ScheduleALesson";
+import { OnlineLessons } from "./routes/OnlineLessons";
+import { GroupLessons } from "./routes/GroupLessons";
+import { Certificates } from "./routes/Certificates";
+import { Recitals } from "./routes/Recitals";
 
 const hashRouter = createHashRouter([
   { path: "/", element: <Home /> },
@@ -19,6 +23,22 @@ const hashRouter = createHashRouter([
   {
     path: "/schedule-a-lesson",
     element: <ScheduleALesson />,
+  },
+  {
+    path: "/certificates",
+    element: <Certificates />,
+  },
+  {
+    path: "/recitals",
+    element: <Recitals />,
+  },
+  {
+    path: "/music-lessons/online-lessons",
+    element: <OnlineLessons />,
+  },
+  {
+    path: "/music-lessons/group-lessons",
+    element: <GroupLessons />,
   },
   ...MusicLessonsPages,
 ]);
