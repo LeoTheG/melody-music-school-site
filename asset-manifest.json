@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/melody-music-school-site/static/css/main.700b4cfd.css",
-    "main.js": "/melody-music-school-site/static/js/main.c8cf86e4.js",
+    "main.css": "/melody-music-school-site/static/css/main.ed12d8ed.css",
+    "main.js": "/melody-music-school-site/static/js/main.722cf12f.js",
     "static/js/787.2317571d.chunk.js": "/melody-music-school-site/static/js/787.2317571d.chunk.js",
     "static/media/background.jpg": "/melody-music-school-site/static/media/background.20c3e044cde136201e51.jpg",
     "static/media/about-us.jpg": "/melody-music-school-site/static/media/about-us.cb3221d1b88e6c5487f2.jpg",
     "static/media/locations-background.jpg": "/melody-music-school-site/static/media/locations-background.7c0bc0a237a10781277c.jpg",
     "static/media/melody-logo.png": "/melody-music-school-site/static/media/melody-logo.158d536513d055e4bf14.png",
     "index.html": "/melody-music-school-site/index.html",
-    "main.700b4cfd.css.map": "/melody-music-school-site/static/css/main.700b4cfd.css.map",
-    "main.c8cf86e4.js.map": "/melody-music-school-site/static/js/main.c8cf86e4.js.map",
+    "main.ed12d8ed.css.map": "/melody-music-school-site/static/css/main.ed12d8ed.css.map",
+    "main.722cf12f.js.map": "/melody-music-school-site/static/js/main.722cf12f.js.map",
     "787.2317571d.chunk.js.map": "/melody-music-school-site/static/js/787.2317571d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.700b4cfd.css",
-    "static/js/main.c8cf86e4.js"
+    "static/css/main.ed12d8ed.css",
+    "static/js/main.722cf12f.js"
   ]
 }
